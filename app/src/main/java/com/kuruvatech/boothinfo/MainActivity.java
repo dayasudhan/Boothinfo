@@ -2,10 +2,8 @@
 package com.kuruvatech.boothinfo;
 
 import android.app.ActivityManager;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -38,13 +36,8 @@ import android.widget.Toast;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.kuruvatech.boothinfo.fragment.AboutFragment;
-import com.kuruvatech.boothinfo.fragment.ImageFragment;
-import com.kuruvatech.boothinfo.fragment.JdsManifestoFragment;
-import com.kuruvatech.boothinfo.fragment.MainFragment;
 import com.kuruvatech.boothinfo.fragment.Settingfragment;
-import com.kuruvatech.boothinfo.fragment.ShareAppFragment;
 import com.kuruvatech.boothinfo.fragment.SuggetionFragment;
-import com.kuruvatech.boothinfo.fragment.VideoFragment;
 import com.kuruvatech.boothinfo.utils.Constants;
 import com.kuruvatech.boothinfo.utils.SessionManager;
 import com.splunk.mint.Mint;

@@ -55,19 +55,10 @@
             android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity android:name=".SingleViewActivity" />
         <activity
-            android:name=".YouTubePlayerAcivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity
             android:name=".MinimalPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity
             android:name=".CustomPlayerControlActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity
-            android:name=".YouTubePlayerFragmentActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity
-            android:name=".FullScreenViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity
         android:name=".SettingsActivity"
