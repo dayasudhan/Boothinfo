@@ -47,158 +47,162 @@ import static com.kuruvatech.boothinfo.utils.Constants.POST_LETTER_URL;
 
 public class SuggetionFragment  extends Fragment {
 
-    EditText editName,editPhone,editEmail;
-    MultiAutoCompleteTextView lettertextview;
+    private EditText mEBoothNo,mEBoothName,mEVoterListPageno,mEVoterListSerialNo,mEFamilyMembers,mEHeadOfFamily,mEFinancialStatus,mEVoterId,mEname,mEPhone;
+    private MultiAutoCompleteTextView mMEPersonalRequirements,mMEBoothRequirements;
+    private Spinner mPartty_spinner,mCast_spinner,mLanguage_spinner,mState_spinner,mLs_spinner,mVs_spinner,mZP_spinner,mTP_spinner,mGP_Spinner;
+
     Button btnSend;
     View view;
-    private Spinner partty_spinner,cm_spinner;
+    String mState,mLS,mVS,mZP,mTP,mGP,mFinancialStatus,mCast,mLanguage,mParty,mBoothNo,mBoothName,
+            mVoterListPageNo,mVoterListSerialNo,mFamilyMemebers,MHeadoffamily,mpersonalrequirements,mboothrequirements,mVoterID,mName,mPhone;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-         view = inflater.inflate(R.layout.suggetion_layout, container, false);
-//        ((MainActivity) getActivity())
-//                .setActionBarTitle("Invite Friends");
-//        editName = (EditText) view.findViewById(R.id.input_name);
-//        editPhone = (EditText) view.findViewById(R.id.input_phone);
-//        editEmail = (EditText) view.findViewById(R.id.input_email);
-//        lettertextview = (MultiAutoCompleteTextView) view.findViewById(R.id.letertextview);
-//        btnSend= (Button) view.findViewById(R.id.btn_send);
-//
-//        btnSend.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String name =editName.getText().toString();
-//                String lettercontent =lettertextview.getText().toString();
-//                if (!validatePhoneNumber(editPhone.getText().toString())) {
-//                    alertMessage("Enter Valid Phone Number");
-//                }
-//                else if(name.trim().length() == 0){
-//                    editName.setFocusableInTouchMode(true);
-//                    editName.requestFocus();
-//                    alertMessage("Enter Name");
-//                }
-//                else if(lettercontent.trim().length() == 0){
-//                    lettertextview.setFocusableInTouchMode(true);
-//                    lettertextview.requestFocus();
-//                    alertMessage("Write Something into letter");
-//                }
-//                else
-//                {
-//                    Letter letter = new Letter();
-//                    letter.setEmailid(editEmail.getText().toString());
-//                    letter.setName(editName.getText().toString());
-//                    letter.setLetter(lettertextview.getText().toString());
-//                    letter.setPhone(editPhone.getText().toString());
-//
-//                    Gson gson = new Gson();
-//                    String strOrder = gson.toJson(letter);
-//
-//                    postLetter(strOrder);
-//                }
-//            }
-//        });
-        addItemsOnParty();
-        addItemsOnCommunity();
+        view = inflater.inflate(R.layout.suggetion_layout, container, false);
+        mState_spinner = (Spinner) view.findViewById(id.statespinner);
+        mPartty_spinner = (Spinner) view.findViewById(id.partyspinner);
+        mCast_spinner = (Spinner) view.findViewById(id.castspinner);
+        mLs_spinner = (Spinner) view.findViewById(id.loksabhaspinner);
+        mVs_spinner = (Spinner) view.findViewById(id.vidhanasabhaspinner);
+        mZP_spinner = (Spinner) view.findViewById(id.zpspinner);
+        mTP_spinner = (Spinner) view.findViewById(id.tpspinner);
+        mGP_Spinner = (Spinner) view.findViewById(id.gpspinner);
+        mLanguage_spinner = (Spinner) view.findViewById(id.languagespinner);
+
+//        String mState = mySpinnerState.getSelectedItem().toString();
+        mEname = (EditText) view.findViewById(id.voter_name);
+        mEPhone = (EditText) view.findViewById(id.contact_no);
+        mEBoothNo = (EditText) view.findViewById(id.boot_no);
+        mEBoothName = (EditText) view.findViewById(id.boot_name);
+        mEVoterId = (EditText) view.findViewById(id.voter_id);
+        mEVoterListPageno = (EditText) view.findViewById(id.voterlist_pageno);
+        mEVoterListSerialNo = (EditText) view.findViewById(id.voterlist_serialno);
+        mEHeadOfFamily = (EditText) view.findViewById(id.head_of_family);
+        mEFinancialStatus = (EditText) view.findViewById(id.financial_status);
+        mMEPersonalRequirements = (MultiAutoCompleteTextView) view.findViewById(id.personal_requirements);
+        mMEBoothRequirements = (MultiAutoCompleteTextView) view.findViewById(id.booth_requirements);
+       // mEFamilyMembers = (EditText) view.findViewById(id.mem);
+//        mEBoothName = (MultiAutoCompleteTextView) view.boo(id.boot_name);
+//        String myState = myName.getText().toString();
+
+        btnSend= (Button) view.findViewById(R.id.btn_send);
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // mEBoothNo,mEBoothName,mEVoterListPageno,mEVoterListSerialNo,mEFamilyMembers,mEHeadOfFamily,mEFinancialStatus,mEVoterId,mEname,mEPhone
+
+                mState = mState_spinner.getSelectedItem().toString();
+                mLS = mLs_spinner.getSelectedItem().toString();
+                mVS = mVs_spinner.getSelectedItem().toString();
+                mZP= mZP_spinner.getSelectedItem().toString();
+                mTP = mTP_spinner.getSelectedItem().toString();
+                mGP = mGP_Spinner.getSelectedItem().toString();
+                mParty = mPartty_spinner.getSelectedItem().toString();
+                mLanguage = mLanguage_spinner.getSelectedItem().toString();
+                mCast = mCast_spinner.getSelectedItem().toString();
+
+                mBoothNo =mEBoothNo.getText().toString();
+                mBoothName =mEBoothName.getText().toString();
+                mVoterListPageNo =mEVoterListPageno.getText().toString();
+                mVoterListSerialNo=mEVoterListSerialNo.getText().toString();
+                mVoterID =mEVoterId.getText().toString();
+                mName =mEname.getText().toString();
+                mPhone =mEPhone.getText().toString();
+//                mFamilyMemebers=mEFamilyMembers.getText().toString();
+                MHeadoffamily =mEHeadOfFamily.getText().toString();
+                mFinancialStatus =mEFinancialStatus.getText().toString();
+                mpersonalrequirements = mMEPersonalRequirements.getText().toString();
+                mboothrequirements = mMEBoothRequirements.getText().toString();
+
+                // String lettercontent =lettertextview.getText().toString();
+                if (!validatePhoneNumber(mEPhone.getText().toString())) {
+                    alertMessage("Enter Valid Phone Number");
+                }
+                else if(mBoothNo.trim().length() == 0){
+                    mEBoothNo.setFocusableInTouchMode(true);
+                    mEBoothNo.requestFocus();
+                    alertMessage("Enter Booth Number");
+                }
+                else if(mBoothName.trim().length() == 0){
+                    mEBoothName.setFocusableInTouchMode(true);
+                    mEBoothName.requestFocus();
+                    alertMessage("Enter Booth Name");
+                }
+                else if(mVoterListPageNo.trim().length() == 0){
+                    mEVoterListPageno.setFocusableInTouchMode(true);
+                    mEVoterListPageno.requestFocus();
+                    alertMessage("Enter Voter List Page Number");
+                }
+                else if(mVoterListSerialNo.trim().length() == 0){
+                    mEVoterListSerialNo.setFocusableInTouchMode(true);
+                    mEVoterListSerialNo.requestFocus();
+                    alertMessage("Enter Voter List Serial Numbere");
+                }
+                else if(mVoterID.trim().length() == 0){
+                    mEVoterId.setFocusableInTouchMode(true);
+                    mEVoterId.requestFocus();
+                    alertMessage("Enter Voter ID");
+                }
+                else if(MHeadoffamily.trim().length() == 0){
+                    mEHeadOfFamily.setFocusableInTouchMode(true);
+                    mEHeadOfFamily.requestFocus();
+                    alertMessage("Enter Head Of Family");
+                }
+                else if(mFinancialStatus.trim().length() == 0){
+                    mEFinancialStatus.setFocusableInTouchMode(true);
+                    mEFinancialStatus.requestFocus();
+                    alertMessage("Enter Financial Status");
+                }
+                else if(mpersonalrequirements.trim().length() == 0){
+                    mMEPersonalRequirements.setFocusableInTouchMode(true);
+                    mMEPersonalRequirements.requestFocus();
+                    alertMessage("Enter Personal Requirements");
+                }
+                else if(mboothrequirements.trim().length() == 0){
+                    mMEBoothRequirements.setFocusableInTouchMode(true);
+                    mMEBoothRequirements.requestFocus();
+                    alertMessage("Enter Booth Requirements");
+                }
+
+                else
+                {
+                    Letter letter = new Letter();
+                    letter.setmBoothName(mBoothName);
+                    letter.setmBoothNo(mBoothNo);
+                    letter.setmCast(mCast);
+                    letter.setmFamilyMemebers(mFamilyMemebers);
+                    letter.setmFinancialStatus(mFinancialStatus);
+                    letter.setmGP(mGP);
+                    letter.setmLanguage(mLanguage);
+                    letter.setmLS(mLS);
+                    letter.setmName(mName);
+                    letter.setmParty(mParty);
+                    letter.setmPhone(mPhone);
+                    letter.setmState(mState);
+                    letter.setmTP(mTP);
+                    letter.setmVoterID(mVoterID);
+                    letter.setmVoterListPageNo(mVoterListPageNo);
+                    letter.setmVoterListSerialNo(mVoterListSerialNo);
+                    letter.setmVS(mVS);
+                    letter.setmZP(mZP);
+                    letter.setMpersonalrequirements(mpersonalrequirements);
+                    letter.setmBoothNo(mboothrequirements);
+                    letter.setMHeadoffamily(MHeadoffamily);
+
+
+
+                    Gson gson = new Gson();
+                    String strOrder = gson.toJson(letter);
+
+                    postLetter(strOrder);
+                }
+            }
+        });
         return view;
     }
-    public void addItemsOnCommunity() {
-        ArrayList<String> languagelist = new ArrayList<String>();
-        languagelist.add("Kannada");
-        languagelist.add("Hindi");
-        languagelist.add("English");
-        languagelist.add("Konkani");
-        languagelist.add("Tulu");
-        languagelist.add("Marati");
-        languagelist.add("Tamil");
-        languagelist.add("Telugu");
-        languagelist.add("Malayalam");
-        languagelist.add("Urdhu");
-        languagelist.add("Bengali");
-        languagelist.add("Coorga");
-        languagelist.add("Gujarathi");
 
-
-
-        ArrayList<String> communitylist = new ArrayList<String>();
-        communitylist.add("Lingayath");
-        communitylist.add("Vokkaliga");
-        communitylist.add("Kuruba");
-        communitylist.add("Beda Nayaka");
-        communitylist.add("Lambani");
-        communitylist.add("Chalavadhi");
-        communitylist.add("Adi Karnataka");
-        communitylist.add("Brahmana");
-        communitylist.add("Madivala");
-        communitylist.add("Kumbara");
-        communitylist.add("Muslim");
-        communitylist.add("Bovi");
-        communitylist.add("Kunchitiga");
-        communitylist.add("Reddy");
-        communitylist.add("Christian");
-        communitylist.add("jains");
-        communitylist.add("Others");
-
-        cm_spinner = (Spinner) view.findViewById(id.castspinner);
-
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(),
-
-                android.R.layout.simple_spinner_item, communitylist);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        cm_spinner.setAdapter(dataAdapter);
-        cm_spinner.setPrompt(communitylist.get(0).toString());
-//        cm_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//
-//                @Override
-//                public void onItemSelected(AdapterView<?> adapterView, View view,
-//                int position, long id) {
-//                    Object item = adapterView.getItemAtPosition(position);
-//                    if (item != null) {
-//                        selectedCast =  new String(item.toString());
-//                    }
-//                }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {}
-//        });
-    }
-
-    public void addItemsOnParty() {
-        ArrayList<String> communitylist = new ArrayList<String>();
-        communitylist.add("BJP");
-        communitylist.add("Congress");
-        communitylist.add("JDS");
-        communitylist.add("JDU");
-        communitylist.add("BSP");
-        communitylist.add("Prjakiya");
-        communitylist.add("Karnataka Rajya Raitha Sangha");
-        communitylist.add("Kannada Naadu");
-        communitylist.add("Others");
-
-
-        partty_spinner = (Spinner) view.findViewById(id.partyspinner);
-
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(),
-
-                android.R.layout.simple_spinner_item, communitylist);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        partty_spinner.setAdapter(dataAdapter);
-        partty_spinner.setPrompt(communitylist.get(0).toString());
-//        cm_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//
-//                @Override
-//                public void onItemSelected(AdapterView<?> adapterView, View view,
-//                int position, long id) {
-//                    Object item = adapterView.getItemAtPosition(position);
-//                    if (item != null) {
-//                        selectedCast =  new String(item.toString());
-//                    }
-//                }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {}
-//        });
-    }
 
     public void postLetter(String letter)
     {

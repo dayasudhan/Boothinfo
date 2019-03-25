@@ -18,7 +18,192 @@
             android:paddingRight="20dp"
             android:paddingBottom="20dp"
             android:paddingTop="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
 
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state"
+                    android:textColor="#a2a1b8"
+                    android:maxLength="20"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/statespinner"
+                    android:textColorHint="#181737"
+                    android:textColor="#181737"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/state_list"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lokasabha"
+                    android:textColor="#a2a1b8"
+                    android:maxLength="20"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/loksabhaspinner"
+                    android:textColorHint="#181737"
+                    android:textColor="#181737"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/lokasabha_list"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vidhanasabh"
+                    android:textColor="#a2a1b8"
+                    android:maxLength="20"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/vidhanasabhaspinner"
+                    android:textColorHint="#181737"
+                    android:textColor="#181737"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/vidhanasabha_list"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zp"
+                    android:textColor="#a2a1b8"
+                    android:maxLength="20"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/zpspinner"
+                    android:textColorHint="#181737"
+                    android:textColor="#181737"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/zp_list"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tp"
+                    android:textColor="#a2a1b8"
+                    android:maxLength="20"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/tpspinner"
+                    android:textColorHint="#181737"
+                    android:textColor="#181737"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/tp_list"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gp"
+                    android:textColor="#a2a1b8"
+                    android:maxLength="20"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/gpspinner"
+                    android:textColorHint="#181737"
+                    android:textColor="#181737"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gp_list"/>
+            </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -31,17 +216,16 @@
                     android:hint="@string/booth_no" />
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+           <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/input_phone"
+                    android:id="@+id/boot_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:inputType="phone"
-                    android:hint="@string/village_name" />
+                    android:hint="@string/booth_name" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -49,23 +233,48 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/input_email"
+                    android:id="@+id/voterlist_pageno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/voter_list_page_no"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/voterlist_serialno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:hint="@string/voter_list_serial_no" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/voter_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:hint="@string/home_no" />
             </android.support.design.widget.TextInputLayout>
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
 
-            <!--<EditText-->
-            <!--android:id="@+id/home_no_voters"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:inputType="textEmailAddress"-->
-            <!--android:hint="@string/home_no_voters" />-->
-            <!--</android.support.design.widget.TextInputLayout>-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/voter_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/voter_name" />
+            </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -127,7 +336,8 @@
                     android:gravity="right"
                     android:layout_width="match_parent"
                     style="@android:style/Widget.Spinner"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:entries="@array/political_party_list"/>
             </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -178,12 +388,65 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/outside_worker_pin_no"
+                    android:id="@+id/financial_status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
-                    android:hint="@string/outside_worker_pin_no" />
+                    android:hint="@string/financial_status" />
             </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/personal_requirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/personal_requirement" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <MultiAutoCompleteTextView
+                    android:id="@+id/booth_requirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/booth_requirement" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cast"
+                android:textColor="#a2a1b8"
+                android:maxLength="12"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                />
+
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/castspinner"
+                android:textColorHint="#181737"
+                android:textColor="#181737"
+                android:padding="16dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                style="@android:style/Widget.Spinner"
+                android:layout_height="wrap_content"
+                android:entries="@array/cast_list"/>
+        </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -195,7 +458,7 @@
                     android:textSize="16dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cast"
+                    android:text="Language"
                     android:textColor="#a2a1b8"
                     android:maxLength="12"
                     android:background="#0000"
@@ -205,14 +468,15 @@
 
                 <Spinner
                     android:layout_weight="1"
-                    android:id="@+id/castspinner"
+                    android:id="@+id/languagespinner"
                     android:textColorHint="#181737"
                     android:textColor="#181737"
                     android:padding="16dp"
                     android:gravity="right"
                     android:layout_width="match_parent"
                     style="@android:style/Widget.Spinner"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:entries="@array/language_list"/>
             </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -253,7 +517,6 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@android:color/white"/>
-
 
         </LinearLayout>
     </RelativeLayout>

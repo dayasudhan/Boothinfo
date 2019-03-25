@@ -57,20 +57,149 @@ Coming Soon
     <string name="key_vibrate">key_vibrate</string>
     <string name="key_send_feedback">key_send_feedback</string>
 
-
+    <string name="state">State</string>
+    <string name="lokasabha">Lokasabha Constituency</string>
+    <string name="vidhanasabh">Vidhanasabha Constituency</string>
+    <string name="zp">Zilla Panchayath</string>
+    <string name="tp">Taluk Panchayath</string>
+    <string name="gp">Grama Panchayath</string>
+    <string name="personal_requirement">Personal Reuirement</string>
+    <string name="booth_requirement">Booth Requirement</string>
+    <string name="rural_town">Rural/Town</string>
+    <string name="financial_status">Financial Status</string>
+    <string name="voter_list_page_no">Voter List Page No</string>
+    <string name="voter_list_serial_no">Voter List Serial No</string>
     <string name="booth_no">Booth No</string>
+    <string name="booth_name">Booth Name</string>
     <string name="village_name">Village Name</string>
-    <string name="home_no">Home Number</string>
+    <string name="home_no">Voter ID</string>
     <string name="home_no_voters">Number of voters in family</string>
     <string name="head_of_family">Head of Family</string>
     <string name="contact_no">Phone No</string>
-    <string name="party_prefferred">Party you vote</string>
+    <string name="voter_name">Voter Name</string>
+    <string name="party_prvoter_efferred">Party you vote</string>
     <string name="vote_will_devide">Will votes Divide</string>
     <string name="outside_working">Family Members working Outside</string>
     <string name="outside_worker_phone_no">Their Phone number</string>
-    <string name="outside_worker_pin_no">Their Pin number</string>
+    <string name="outside_worker_pin_no">Financial Status</string>
     <string name="family_cast">Cast</string>
     <string name="which_organisation_involved">Any Other Organisations Involved</string>
     <string name="btn_submit">Submit</string>
+    <string name="personal_reqiorement">Personal Requirement</string>
 
+    <string-array name="state_list">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>National Capital Territory of Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Puducherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+
+
+    <string-array name="lokasabha_list">
+        <item>Shimoga</item>
+    </string-array>
+    <string-array name="vidhanasabha_list">
+        <item>Thirthahalli</item>
+    </string-array>
+    <string-array name="zp_list">
+        <item>Nagara</item>
+        <item>Agumbe</item>
+        <item>Araga</item>
+        <item>Nidhige</item>
+        <item>Mandagadde</item>
+        <item>Kuppali</item>
+    </string-array>
+    <string-array name="tp_list">
+        <item>Nagara</item>
+        <item>Kairagunda</item>
+        <item>Sampakatte</item>
+        <item>Trinive</item>
+
+    </string-array>
+
+    <string-array name="gp_list">
+        <item>Nagara</item>
+        <item>Kodachadri</item>
+        <item>Bidhirukote</item>
+        <item>Masthikatte</item>
+        <item>Basirekatte</item>
+    </string-array>
+    <string-array name="cast_list">
+        <item>Lingayath</item>
+        <item>Vokkaliga</item>
+        <item>Kuruba</item>
+        <item>Beda Nayaka</item>
+        <item>Lambani</item>
+        <item>Chalavadhi</item>
+        <item>Adi Karnataka</item>
+        <item>Brahmana</item>
+        <item>Madivala</item>
+        <item>Kumbara</item>
+        <item>Muslim</item>
+        <item>Bovi</item>
+        <item>Kunchitiga</item>
+        <item>Reddy</item>
+        <item>Christian</item>
+        <item>jains</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="political_party_list">
+        <item>BJP</item>
+        <item>Congress</item>
+        <item>JDS</item>
+        <item>JDU</item>
+        <item>BSP</item>
+        <item>Prajakiya</item>
+        <item>AAP</item>
+        <item>Karnataka Janatha Rangha</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="language_list">
+        <item>Kannada</item>
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Konkani</item>
+        <item>Tulu</item>
+        <item>Marati</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Malayalam</item>
+        <item>Urdhu</item>
+        <item>Bengali</item>
+        <item>Coorga</item>
+        <item>Gujarathi</item>
+    </string-array>
 </resources>

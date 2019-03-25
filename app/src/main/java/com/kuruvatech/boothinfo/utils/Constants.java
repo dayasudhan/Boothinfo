@@ -5,17 +5,17 @@ public class Constants {
 
     public static final String LOCALHOST = "http://192.168.1.104:3000";
 
-    public static final String RELEASE_URL = "http://chunavane.herokuapp.com";
-    public static final String DEBUG_URL = "http://chunavane.herokuapp.com";
+    public static final String RELEASE_URL = "http://boothinfo.herokuapp.com";
+    public static final String DEBUG_URL = "http://boothinfo.herokuapp.com";
 
     public static final String MAIN_URL = DEBUG_URL;
-    public static final String USERNAME = "test3";
+    public static final String USERNAME = "vol1";
     public static final String PARTY = "congress";
     public static final String GET_FEEDS_URL = MAIN_URL + "/v2/feed/info/";
     public static final String GET_IMAGES_URL = MAIN_URL + "/v1/feed/images/";
     public static final String GET_VIDEOS_URL = MAIN_URL + "/v1/feed/videos/";
     public static final String GET_MANIFESTO_URL = MAIN_URL + "/v1/feed/manifesto/" + PARTY;
-    public static final String POST_LETTER_URL = MAIN_URL + "/v1/candidate/suggestion/" +USERNAME;
+    public static final String POST_LETTER_URL = MAIN_URL + "/v1/voterinfo/" +USERNAME;
 
 
     public static final String FIREBASE_APP = "https://project-8598805513533999178.firebaseio.com";

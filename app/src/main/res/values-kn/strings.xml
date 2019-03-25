@@ -35,6 +35,20 @@
 
     <string name="summary_about">ಈ ಆಂಡ್ರಾಯ್ಡ್ ಅಪ್ ಅನ್ನು ಕುರುವ ಟೆಕ್ನಾಲಜೀಸ್ ಎಲ್ ಎಲ್ ಪೀ
 ಅಬಿರುಧಿ ಪಡಿಸಿಧೆ .</string>
+
+    <string name="state">ರಾಜ್ಯ</string>
+    <string name="lokasabha">ಲೋಕಸಭಾ ಕ್ಷೇತ್ರ</string>
+    <string name="vidhanasabh">ವಿಧಾನಸಭಾ</string>
+    <string name="zp">ಜಿಲ್ಲಾ ಪಂಚಾಯತ್</string>
+    <string name="tp">ತಾಲ್ಲೂಕು ಪಂಚಾಯತ್</string>
+    <string name="gp">ಗ್ರಾಮ ಪಂಚಾಯತ್</string>
+    <string name="personal_requirement">ವೈಯಕ್ತಿಕ ಅವಶ್ಯಕತೆ</string>
+    <string name="booth_requirement">ಬೂತ್ ಅವಶ್ಯಕತೆ</string>
+    <string name="rural_town">ಗ್ರಾಮೀಣ / ಪಟ್ಟಣ</string>
+    <string name="financial_status">ಹಣಕಾಸಿನ ಸ್ಥಿತಿ</string>
+    <string name="voter_list_page_no">ಮತದಾರರ ಪಟ್ಟಿ ಪುಟ ಸಂಖ್ಯೆ</string>
+    <string name="voter_list_serial_no">ಮತದಾರರ ಪಟ್ಟಿ ಸೀರಿಯಲ್ ಸಂಖ್ಯೆ</string>
+
     <string name="booth_no">ಬೂತ್ ಸಂಖ್ಯೆ</string>
     <string name="village_name">ಗ್ರಾಮ ಹೆಸರು</string>
     <string name="home_no">ಮನೆ ಸಂಖ್ಯೆ</string>
@@ -49,4 +63,121 @@
     <string name="family_cast">ಜಾತಿ</string>
     <string name="which_organisation_involved">ಸದ್ಯಸರು ಯಾವ ಸಂಘದೊಂದಿಗೆ ಬಾಗಿ</string>
 
+    <string name="booth_name">ಬೂತ್ ಹೆಸರು</string>
+    <string name="voter_name">ಮತದಾರರ ಹೆಸರು</string>
+    <string name="party_prvoter_efferred">ನೀವು ಮತ ​​ಹಾಕುವ ಪಕ್ಷ</string>
+    <string name="btn_submit">Submit</string>
+
+    <string-array name="state_list">
+    <item> ಅಂಡಮಾನ್ ಮತ್ತು ನಿಕೋಬಾರ್ ದ್ವೀಪಗಳು </item>
+            <item> ಆಂಧ್ರ ಪ್ರದೇಶ </item>
+            <item> ಅರುಣಾಚಲ ಪ್ರದೇಶ </item>
+            <item> ಅಸ್ಸಾಂ </item>
+            <item> ಬಿಹಾರ </item>
+            <item> ಚಂಡೀಘಢ </item>
+            <item> ಛತ್ತೀಸ್ಗಢ </item>
+            <item> ದಾದ್ರಾ ಮತ್ತು ನಗರ್ ಹವೇಲಿ </item>
+            <item> ದಮನ್ ಮತ್ತು ಡಿಯು </item>
+            <item> ದೆಹಲಿಯ ರಾಷ್ಟ್ರೀಯ ರಾಜಧಾನಿ ಪ್ರದೇಶ </item>
+            <item> ಗೋವಾ </item>
+            <item> ಗುಜರಾತ್ </item>
+            <item> ಹರಿಯಾಣ </item>
+            <item> ಹಿಮಾಚಲ ಪ್ರದೇಶ </item>
+            <item> ಜಮ್ಮು ಮತ್ತು ಕಾಶ್ಮೀರ </item>
+            <item> ಜಾರ್ಖಂಡ್ </item>
+            <item> ಕರ್ನಾಟಕ </item>
+            <item> ಕೇರಳ </item>
+            <item> ಲಕ್ಷದ್ವೀಪ </item>
+            <item> ಮಧ್ಯ ಪ್ರದೇಶ </item>
+            <item> ಮಹಾರಾಷ್ಟ್ರ </item>
+            <item> ಮಣಿಪುರ </item>
+            <item> ಮೇಘಾಲಯ </item>
+            <item> ಮಿಜೋರಾಮ್ </item>
+            <item> ನಾಗಾಲ್ಯಾಂಡ್ </item>
+            <item> ಒಡಿಶಾ </item>
+            <item> ಪುದುಚೇರಿ </item>
+            <item> ಪಂಜಾಬ್ </item>
+            <item> ರಾಜಸ್ಥಾನ </item>
+            <item> ಸಿಕ್ಕಿಂ </item>
+            <item> ತಮಿಳುನಾಡು </item>
+            <item> ತೆಲಂಗಾಣ </item>
+            <item> ತ್ರಿಪುರ </item>
+            <item> ಉತ್ತರ ಪ್ರದೇಶ </item>
+            <item> ಉತ್ತರಾಖಂಡ್ </item>
+            <item> ಪಶ್ಚಿಮ ಬಂಗಾಳ </item>
+    </string-array>
+    <string-array name="lokasabha_list">
+        <item>ಶಿವಮೊಗ್ಗ</item>
+    </string-array>
+    <string-array name="vidhanasabha_list">
+        <item>ತೀರ್ಥಹಳ್ಳಿ</item>
+    </string-array>
+    <string-array name="zp_list">
+        <item>ನಗರ</item>
+        <item>ಆಗುಂಬೆ</item>
+        <item>ಆರಗ</item>
+        <item>ನಿಧಿಗೆ</item>
+        <item>ಮಂಡಗದ್ದೆ</item>
+        <item>ಕುಪ್ಪಳಿ</item>
+    </string-array>
+    <string-array name="tp_list">
+        <item>ನಗರ</item>
+        <item>ಕೈರಗುಂಡ</item>
+        <item>ಸಂಪೆಕಟ್ಟೆ</item>
+        <item>ತ್ರಿನಿವೆ</item>
+
+    </string-array>
+    <string-array name="gp_list">
+        <item>Nagara</item>
+        <item>Kodachadri</item>
+        <item>Bidhirukote</item>
+        <item>Masthikatte</item>
+        <item>Basirekatte</item>
+    </string-array>
+    <string-array name="cast_list">
+        <item>Lingayath</item>
+        <item>Vokkaliga</item>
+        <item>Kuruba</item>
+        <item>Beda Nayaka</item>
+        <item>Lambani</item>
+        <item>Chalavadhi</item>
+        <item>Adi Karnataka</item>
+        <item>Brahmana</item>
+        <item>Madivala</item>
+        <item>Kumbara</item>
+        <item>Muslim</item>
+        <item>Bovi</item>
+        <item>Kunchitiga</item>
+        <item>Reddy</item>
+        <item>Christian</item>
+        <item>jains</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="political_party_list">
+        <item>BJP</item>
+        <item>Congress</item>
+        <item>JDS</item>
+        <item>JDU</item>
+        <item>BSP</item>
+        <item>Prajakiya</item>
+        <item>AAP</item>
+        <item>Karnataka Janatha Rangha</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="language_list">
+        <item>Kannada</item>
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Konkani</item>
+        <item>Tulu</item>
+        <item>Marati</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Malayalam</item>
+        <item>Urdhu</item>
+        <item>Bengali</item>
+        <item>Coorga</item>
+        <item>Gujarathi</item>
+    </string-array>
 </resources>
